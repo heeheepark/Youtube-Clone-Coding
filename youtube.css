@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration-line: none;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    height: 40px;
+}
+
+.header_logo {
+    padding-left: 10px;
+}
+
+.header_logo i {
+    color: red;
+}
+
+.header_logo a {
+    color: white;
+}
+
+.header_search {
+    padding-right: 10px;
+    color: white;
+}
+
+.hashtag {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.hashtag li {
+    font-size: 12px;
+    float: left;
+    padding-right: 5px;
+}
+
+.hashtag a {
+    color: blue;
+}
+
+.subject_text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+.view {
+    color: gray;
+    font-size: 12px;
+    padding-left: 20px;
+    padding-top: 5px;
+}
+
+.icon {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.icon li {
+    text-align: center;
+}
+
+.icon li div {
+    size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.icon li div i {
+    font-size: 18px;
+    color: gray;
+}
+
+.icon li div span {
+    font-size: 12px;
+    padding-top: 10px;
+    color: gray;
+}
+
+.user {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.user_name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.user_name img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.user_name div {
+    padding-left: 5px;
+}
+
+.user_name1 {
+    font-size: 15px;
+}
+
+.user_name2 {
+    font-size: 10px;
+}
+
+.subscribe {
+    font-size: 14px;
+}
+
+.list {
+    display: flex;
+    padding: 10px 15px;
+}
+
+.list img {
+    width: 140px;
+    height: 90px;
+}
+
+.list i {
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.text {
+    padding: 10px 15px 0;
+    font-size: 14px;
+    color: gray;
+}
+
+.text1 {
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+.text2 {
+    font-size: 12px;
+    padding-left: 10px;
+    color: gray;
+}
+
+.text3 {
+    font-size: 10px;
+    padding-left: 10px;
+    color: gray;
+}
