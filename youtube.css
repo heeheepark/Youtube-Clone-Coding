@@ -1,168 +1,247 @@
-body {
+:root{
+    /* Color */
+--white-color: #fff;
+--black-color: #140a00;
+--blue-color: #045fd4;
+--red-color: #ff0000;
+--grey-dark-color: #909090;
+--grey-light-color: #e0e0e0;
+
+    /* Size */
+--side-padding: 12px;
+--avatar-size: 36px;
+
+    /* Font Size */
+--font-large: 18px;
+--font-medium: 14px;
+--font-small: 12px;
+--font-micro: 10px;
+}
+
+* {
+    padding: 0;
     margin: 0;
+    box-sizing: border-box; /*  paaidng이나 margin을 줬을 때 그것을 포함하여 박스 사이징 되도록 설정 */
+}
+
+body {
+    font-family: Roboto;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+button,
+button:focus {
+    border: none;
+    cursor: pointer;
+    outline: none;
 }
 
 a {
     text-decoration-line: none;
 }
 
-.header {
+header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: var(--side-padding);
     align-items: center;
-    background-color: black;
+    background-color: var(--black-color);
+    color: var(--white-color);
     height: 40px;
 }
 
-.header_logo {
-    padding-left: 10px;
+header .header_logo {
+    font-size: var(--font-large);
 }
 
-.header_logo i {
-    color: red;
+header .header_logo i {
+    color: var(--red-color);
 }
 
-.header_logo a {
-    color: white;
+header .search {
+    margin-right: var(--side-padding);
 }
 
-.header_search {
-    padding-right: 10px;
-    color: white;
+/* Video Player */
+.player {
+    position: sticky;
+    top: 0;
+    text-align: center;
+    background-color: var(--black-color);
 }
 
-.hashtag {
-    list-style: none;
-    padding-left: 20px;
+.player video {
+    width: 100%;
+    height: 100%;
+    max-width: 1000px;
 }
 
-.hashtag li {
-    font-size: 12px;
+.subject {
+    padding: var(--side-padding);
+}
+
+.subject .hashtag {
+    display: flex;
+    font-size: var(--font-small);
+    color: var(--blue-color);
+}
+
+.subject .hashtag li {
+    margin-right: var(--side-padding);
     float: left;
-    padding-right: 5px;
 }
 
-.hashtag a {
-    color: blue;
-}
-
-.subject_text {
+.subject .subject_text {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-left: 20px;
-    padding-right: 10px;
 }
 
-.view {
-    color: gray;
-    font-size: 12px;
-    padding-left: 20px;
-    padding-top: 5px;
+.subject .subject_text .subject_name {
+    font-size: var(--font-medium);
+        margin-right: var(--side-padding);
 }
 
-.icon {
-    list-style: none;
+.subject .subject_text .subject_name.clamp {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+/* 화살표를 글자와 맞추는 것 확인하기 */
+.subjext .subject_text .moreBtn {
+    height: 100%;
+}
+
+.subject .view {
+    color: var(--grey-dark-color);
+    font-size: var(--font-small);
+}
+
+.subject .icon {
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
-    align-items: center;
-    padding: 0 20px;
+    margin: var(--side-padding) 0;
+
 }
 
-.icon li {
+.subject .icon button {
+    display: flex;
+    flex-direction: column;
+    font-size: var(--font-small);
     text-align: center;
 }
 
-.icon li div {
-    size: 30px;
+.subject .icon button i {
+    margin: 0 auto;
+    margin-bottom: calc(var(--side-padding) / 2);
+    font-size: 16px;
+    color: var(--grey-dark-color);
+}
+
+.subject .icon button i.active {
+    color: var(--blue-color);
+}
+
+/* Channel Description */
+
+.subject .user {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid var(--grey-light-color);
+    border-bottom: 1px solid var(--grey-light-color);
+}
+
+.subject .user .user_name {
+    display: flex;
+    align-items: center;
+}
+
+.subject .user .user_name img {
+    width: var(--avatar-size);
+    height: var(--avatar-size);
+    border-radius: 50%;
+}
+
+
+/* .info에 flex box 적용 안되는 이유 확인 */
+
+.subject .user .user_name .info {
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
-.icon li div i {
-    font-size: 18px;
-    color: gray;
+.subject .user .user_name .info .user_name1 {
+    font-size: var(--font-medium);
 }
 
-.icon li div span {
-    font-size: 12px;
-    padding-top: 10px;
-    color: gray;
+.subject .user .user_name .info .user_name2 {
+    font-size: var(--font-small);
+    color: var(--grey-dark-color);
 }
 
-.user {
+.subject .user .subscribe {
+    text-transform: uppercase;
+    color: var(--red-color);
+    font-size: var(--font-medium);
+}
+
+.upNext {
+    padding: var(--side-padding);
+}
+
+.upNext .text {
+    font-size: var(--font-medium);
+    color: var(--grey-dark-color);
+    margin-bottom: calc(var(--side-padding) / 2);
+}
+
+.upNext .list {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 15px;
+    margin-top: var(--side-padding);
 }
 
-.user_name {
+.upNext .list .img {
+    flex: 1 1 35%;
+    margin-right: var(--side-padding);
+}
+
+.upNext .list .img img {
+    width: 100%;
+}
+
+.upNext .list .info {
+    flex: 1 1 60%;
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
 }
 
-.user_name img {
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
+.upNext .list .moreBtn {
+    flex: 1 1 5%;
 }
 
-.user_name div {
-    padding-left: 5px;
+.upNext .list .info .text1 {
+    font-size: var(--font-small);
 }
 
-.user_name1 {
-    font-size: 15px;
+.upNext .list .info .text2,
+.upNext .list .info .text3 {
+    font-size: var(--font-micro);
+    color: var(--grey-dark-color);
 }
 
-.user_name2 {
-    font-size: 10px;
-}
-
-.subscribe {
-    font-size: 14px;
-}
-
-.list {
+.infoAndUpNext {
     display: flex;
-    padding: 10px 15px;
+    flex-direction: column;
 }
 
-.list img {
-    width: 140px;
-    height: 90px;
-}
-
-.list i {
-    padding-left: 10px;
-    padding-top: 10px;
-}
-
-.text {
-    padding: 10px 15px 0;
-    font-size: 14px;
-    color: gray;
-}
-
-.text1 {
-    padding-left: 10px;
-    font-size: 14px;
-}
-
-.text2 {
-    font-size: 12px;
-    padding-left: 10px;
-    color: gray;
-}
-
-.text3 {
-    font-size: 10px;
-    padding-left: 10px;
-    color: gray;
+@media screen and (min-width: 768px) {
+    .infoAndUpNext {
+        flex-direction: row;
+        margin: var(--side-padding);
+    }
 }

@@ -5,130 +5,119 @@
         <title>유투브 클론코딩</title>
         <script src="https://kit.fontawesome.com/ed64eef5df.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="youtube.css">
+        <script src="main.js" defer></script>
     </head>
     <body>
-        <nav class="header">
+        <header>
             <div class="header_logo">
                 <i class="fa-brands fa-youtube"></i>
-                <a href=""><b>Youtube</b></a>
+                <span class="title">Youtube</span>
             </div>
-            <div class="header_search">
+            <div class="search">
                 <i class="fa-solid fa-magnifying-glass"></i>
                 <i class="fa-solid fa-ellipsis-vertical"></i>
             </div>
-        </nav>
-        <nav class="video">
-            <video controls width="100%">
-
-                <source src="/media/cc0-videos/flower.webm"
-                        type="video/webm">
-            
-                <source src="/media/cc0-videos/flower.mp4"
-                        type="video/mp4">
-            
-                Download the
-                <a href="/media/cc0-videos/flower.webm">WEBM</a>
-                or
-                <a href="/media/cc0-videos/flower.mp4">MP4</a>
-                video.
+        </header>
+        <section class="player">
+            <video controls src="video/Person Playing A Guitar.mp4" width="100%">
             </video>
-            
-        </nav>
-        <nav class="subject">
-            <ul class="hashtag">
-                <li><a href="">#DreamCoding</a></li>
-                <li><a href="">#DreamCoders</a></li>
-                <li><a href="">#Ellie</a></li>
-            </ul><br>
-            <div class="subject_text">
-                <div class="subject_name">Clone Coding: Youtube Mobile Website 유투브 모바일 웹사이트 따라 만들기│프론트엔드 개발자 입문편: HTML, CSS</div>
-                <i class="fa-solid fa-caret-down"></i>
-            </div>
-            <div class="view">1M views 1 month ago</div>
-        </nav>
-        <nav>
-            <ul class="icon">
-                <li>
-                    <div>
-                        <i class="fa-solid fa-thumbs-up"></i>
-                        <span>1K</span>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <i class="fa-solid fa-thumbs-down"></i>
-                        <span>0</span>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <i class="fa-solid fa-share"></i>
-                        <span>Share</span>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <i class="fa-solid fa-plus"></i>
-                        <span>Save</span>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <i class="fa-solid fa-flag"></i>
-                        <span>Report</span>
-                    </div>
-                </li>
-            </ul>
-        </nav>
-        <nav class="user">
-            <div class="user_name">
-                <img src="unnamed.jpg">
-                <div>
-                    <div class="user_name1">드림코딩 by 엘리</div>
-                    <div class="user_name2">1M subscribers</div>
+        </section>
+        <div class="infoAndUpNext">
+            <section class="subject">
+                <ul class="hashtag">
+                    <li><a href="">#DreamCoding</a></li>
+                    <li><a href="">#DreamCoders</a></li>
+                    <li><a href="">#Ellie</a></li>
+                </ul>
+                <div class="subject_text">
+                    <div class="subject_name clamp">Clone Coding: Youtube Mobile Website 유투브 모바일 웹사이트 따라 만들기│프론트엔드 개발자 입문편: HTML, CSS,  Javascript 드림코딩과 함께하는 프론트엔드 실전 입문편</div>
+                    <button class="moreBtn"><i class="fa-solid fa-caret-down"></i></button>
                 </div>
-            </div>
-            <div class="subscribe">
-                SUBSCRIBE
-            </div>
-        </nav>
-        <nav>
-            <div class="text">Up next</div>
-            <div class="list">
-                <img src="제목 없음.png">
-                <div>
-                    <div class="text1">프론트엔드 강의, 프론트엔드 개발자가 되고 싶다면? 웹개발 입문자편 강의를 시작합니다⭐ (HTML, CSS, Javascript + 실전 프로젝트)</div>
-                    <div class="text2">드림코딩 by 엘리</div>
-                    <div class="text3">82K views</div>
+                <div class="view">
+                    <span class="view">1M views 1 month ago</span></div>
+                <ul class="icon">
+                    <li>
+                        <button>
+                            <i class="active fa-solid fa-thumbs-up"></i>
+                            <span>1K</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button>
+                            <i class="fa-solid fa-thumbs-down"></i>
+                            <span>0</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button>
+                            <i class="fa-solid fa-share"></i>
+                            <span>Share</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button>
+                            <i class="fa-solid fa-plus"></i>
+                            <span>Save</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button>
+                            <i class="fa-solid fa-flag"></i>
+                            <span>Report</span>
+                        </button>
+                    </li>
+                </ul>
+                <div class="user">
+                    <div class="user_name">
+                        <img src="unnamed.jpg">
+                        <div class="info">
+                            <span class="user_name1">드림코딩 by 엘리</sp>
+                            <span class="user_name2">1M subscribers</span>
+                        </div>
+                    </div>
+                    <button class="subscribe">SUBSCRIBE</button>
                 </div>
-                <i class="fa-solid fa-ellipsis-vertical"></i>
-            </div>
-            <div class="list">
-                <img src="제목 없음.png">
-                <div>
-                    <div class="text1">HTML 기초, React 할때 꼭 필요한 팁! 쉽다고 무시하면 안돼요│프론트엔드 개발자 입문편: HTML, CSS, Javascript</div>
-                    <div class="text2">드림코딩 by 엘리</div>
-                    <div class="text3">82K views</div>
-                </div>
-                <i class="fa-solid fa-ellipsis-vertical"></i>
-            </div>
-            <div class="list">
-                <img src="제목 없음.png">
-                <div>
-                    <div class="text1">HTML 태그 완성, 웹 포트폴리오 만들기 전에 꼭 보세요 | 프론트엔드 개발자 입문편: HTML, CSS, Javascript</div>
-                    <div class="text2">드림코딩 by 엘리</div>
-                    <div class="text3">82K views</div>
-                </div>
-                <i class="fa-solid fa-ellipsis-vertical"></i>
-            </div>
-            <div class="list">
-                <img src="제목 없음.png">
-                <div>
-                    <div class="text1">CSS 셀렉터, 기초 이론 정리. 포트폴리오 만드는 날까지! | 프론트엔드 개발자 입문편: HTML, CSS, Javascript</div>
-                    <div class="text2">드림코딩 by 엘리</div>
-                    <div class="text3">82K views</div>
-                </div>
-                <i class="fa-solid fa-ellipsis-vertical"></i>
-            </div>
-        </nav>
+            </section>
+            <section class="upNext">
+                <span class="text">Up next</span>
+                <ul>
+                    <li class="list">
+                        <div class="img"><img src="제목 없음.png"></div>
+                        <div class="info">
+                            <span class="text1">프론트엔드 강의, 프론트엔드 개발자가 되고 싶다면? 웹개발 입문자편 강의를 시작합니다⭐ (HTML, CSS, Javascript + 실전 프로젝트)</span>
+                            <span class="text2">드림코딩 by 엘리</span>
+                            <span class="text3">82K views</span>
+                        </div>
+                        <button class="moreBtn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                    </li>
+                    <li class="list">
+                        <div class="img"><img src="제목 없음.png"></div>
+                        <div class="info">
+                            <span class="text1">HTML 기초, React 할때 꼭 필요한 팁! 쉽다고 무시하면 안돼요│프론트엔드 개발자 입문편: HTML, CSS, Javascript</span>
+                            <span class="text2">드림코딩 by 엘리</span>
+                            <span class="text3">82K views</span>
+                        </div>
+                        <button class="moreBtn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                    </li>
+                    <li class="list">
+                        <div class="img"><img src="제목 없음.png"></div>
+                        <div class="info">
+                            <span class="text1">HTML 태그 완성, 웹 포트폴리오 만들기 전에 꼭 보세요 | 프론트엔드 개발자 입문편: HTML, CSS, Javascript</span>
+                            <span class="text2">드림코딩 by 엘리</sp>
+                            <span class="text3">82K views</sp>
+                        </div>
+                        <button class="moreBtn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                    </li>
+                    <li class="list">
+                        <div class="img"><img src="제목 없음.png"></div>
+                        <div class="info">
+                            <span class="text1">CSS 셀렉터, 기초 이론 정리. 포트폴리오 만드는 날까지! | 프론트엔드 개발자 입문편: HTML, CSS, Javascript</sp>
+                            <span class="text2">드림코딩 by 엘리</span>
+                            <span class="text3">82K views</span>
+                        </div>
+                        <button class="moreBtn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                    </li>
+                </ul>
+            </section>
+        </div>
     </body>
